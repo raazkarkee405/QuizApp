@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+    <!--Question 1-->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="1.In 1819 B.S., Prithivi Narayan Shah"/>
+
+    <RadioGroup
+        android:id="@+id/num_one_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/makwanpur_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="won makwanpur"/>
+
+        <RadioButton
+            android:id="@+id/kathmandu_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="won kathmandu"/>
+
+        <RadioButton
+            android:id="@+id/nuwakot_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="won Nuwakot"/>
+
+        <RadioButton
+            android:id="@+id/king_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="became king"/>
+    </RadioGroup>
+
+    <!--Question 2-->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="2.The worlds oldest city is"
+        />
+
+    <RadioGroup
+        android:id="@+id/num_two_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/bhaktapur_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Bhaktapur"/>
+
+        <RadioButton
+            android:id="@+id/rio_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Rio de Jenerio"/>
+
+        <RadioButton
+            android:id="@+id/damascus_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Damascus"/>
+
+        <RadioButton
+            android:id="@+id/los_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Los Angeles"/>
+    </RadioGroup>
+
+    <!--Question 3-->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="1.Who is the father of Nepal?"/>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your answer.."
+            android:inputType="text"/>
+    <!--Question 4-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.Prime Ministers of Nepal..."
+        android:fontFamily="sans-serif"
+        android:textColor="@color/accent"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <CheckBox
+            android:id="@+id/sher_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khadga Prasad Oli"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/gagan_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gagan Thapa"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/puspa_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puspa Kamal Dahal"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/madav_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Madav Kumar Nepal"
+            android:textSize="16sp"/>
+
+
+    <!--Question 5-->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="5.How many provinces in Nepal?"
+        />
+
+    <RadioGroup
+        android:id="@+id/num_five_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/one_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="1"/>
+
+        <RadioButton
+            android:id="@+id/three_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/six_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="6"/>
+
+        <RadioButton
+            android:id="@+id/seven_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="7"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="submit"/>
+
+    </LinearLayout>
+
+</ScrollView>
